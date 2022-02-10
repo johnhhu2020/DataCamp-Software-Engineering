@@ -1,0 +1,38 @@
+Metadata-Version: 2.1
+Name: token-utils
+Version: 0.1.8
+Summary: Small utility to work with Python tokens
+Home-page: https://github.com/aroberge/token-utils
+Author: André Roberge
+Author-email: Andre.Roberge@gmail.com
+License: UNKNOWN
+Platform: UNKNOWN
+Classifier: Development Status :: 1 - Planning
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+
+# token-utils
+
+This project consists of a single module which is extracted from the
+[ideas](https://github.com/aroberge/ideas) package.
+Its purpose is to simplify manipulations of tokens from
+Python's [tokenize module](https://docs.python.org/3/library/tokenize.html).
+One of its features is that, unlike Python's version, the following
+is always guaranteed:
+
+```python
+from token_utils import tokenize, untokenize
+
+source = "Arbitrary Python code here"
+
+assert source == untokenize(tokenize(source))
+```
+
+See [ideas documentation](https://aroberge.github.io/ideas/docs/html/) for more information
+
+

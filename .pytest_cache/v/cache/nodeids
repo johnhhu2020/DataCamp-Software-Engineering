@@ -1,0 +1,5 @@
+[
+  "tests/test_document.py::test_document_empty",
+  "tests/test_document.py::test_document_tokens",
+  "tests/test_social_media.py::test_social_media_hashtags"
+]
